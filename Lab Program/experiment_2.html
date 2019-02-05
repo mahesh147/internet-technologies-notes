@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Lab Program 2 </title>
+	</head>
+	<body bgcolor="#33ffca">
+		<h1 align="center"> Enter your details </h1>
+		<form>
+			<label>Name</label>
+			<input type-"text" required="required">
+			<label>Date</label>
+			<input type="date" required="required">
+			<label>Age</label>
+			<input type="number" max="90" required="required">
+			<br><br>
+			<fieldset style="border-radius:20px">
+				<legend align="center">Select your gender</legend>
+				<input type="radio" name="rs">
+				Male
+
+				<input type="radio" name="rs">
+				Female
+
+				<input type="radio" name="rs">
+				Other
+			</fieldset>
+
+			<br><br>
+			<select>
+				<option>Nationality</option>
+				<option>Indian</option>
+				<option>American</option>
+				<option>Canadian</option>
+				<option>European</option>
+			</select>
+
+			<br><br>
+
+			<select>
+				<option>District</option>
+				<option>Kochi</option>
+				<option>Kasaragod</option>
+				<option>Wayanad</option>
+				<option>Kollam</option>
+			</select>
+			<label>Mobile</label>
+			<input type="tel" pattern={0-9}[10]>
+			
+			<br><br>
+			<label>Email</label>
+			<input type="email" required="required">
+			
+			<br><br>
+			<br><br>
+			<label>Address</label>
+			<input type="textarea" rows="10" cols="10">
+
+			<br><br>
+				<label>Select your branch </option>
+			<select multiple="multiple">
+				<option>IT</option>
+				<option>CS</option>
+				<option>EC</option>
+				<option>EEE</option>
+				<option>ME</option>
+			</select>
+
+			<br><br>
+			<fieldset style="border-radis=us:20px">
+				<legend align="center">Select hobbies</legend>
+				<input type="checkbox">Reading
+				<input type="checkbox">Music
+				<input type="checkbox">Movies
+			</fieldset>
+
+			<br><br>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</form>
+
+	</body>
+
+</html>
