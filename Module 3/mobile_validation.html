@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Validation</title>
+		<script type="text/javascript">
+			var num = document.formvalidate.textnum.value;
+			if (num == ""){
+				alert("Enter the mobile number");
+				return;
+			}
+			if(isNaN(num)){
+				alert("Not a number");
+				return;
+			}
+			if(num.length<10) {
+				alert("enter the 10 digit number");
+				return;
+			}
+			alert("validation successfull");
+
+	}
+
+	</script>
+	</head>
+	<body>
+		<form name
+	</body>
+</html>

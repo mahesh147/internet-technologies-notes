@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation</title>
+     <script type="text/javascript">
+        function datavalidate(){ 
+            var num = document.formvalidate.txtnum.value;
+            if(num == " "){
+                alert("Enter the mobile number:");
+                return;
+            }
+            if(isNaN(num)){
+                alert("NOT A NUMBER!");
+                return;
+            }
+            if(num.length<10){
+                alert("Enter the 10 digit number:");
+                return;
+            }
+            alert("Validation Successfull!");
+        }//end of function
+    </script>
+</head>
+<body>
+    <form name=formvalidate>
+        <center>
+            <label>Enter the mobile number:
+                <input type="text" name="txtnum">
+            </label> <br><br>
+            <input type="button" value="Validate" onclick="datavalidate()">
+        </center> 
+    </form>
+</body>
+</html>
